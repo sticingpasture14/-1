@@ -1,0 +1,178 @@
+* {
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family:'Times New Roman', Times, serif;
+        padding: 40px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+    }
+
+    .card_image {
+        width: 130px;
+        height: 130px;
+        background-image: url('ffff/этоя.jpg');
+        background-size: cover;
+        background-position: center;
+        /*для обычного квадрата с цветом вместо трех background, можно заменить на background-color: #000000*/
+        margin-bottom: 20px;
+    }
+
+    .card_title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .card_text {
+        text-align: left;
+        line-height: 1.5;
+        font-size: 13px;
+    }
+
+    .rows {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .row:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .row_image {
+        width: 90px;
+        height: 90px;
+        background-color: #000000;
+        flex-shrink: 0;
+    }
+
+    .row_body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row_title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .row_text {
+        text-align: left;
+        line-height: 1.4;
+        font-size: 12px;
+    }
+
+        .posts {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .post_title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .post_text {
+        text-align: left;
+        line-height: 1.4;
+        font-size: 12px;
+    }
+
+        .cards,
+    .rows,
+    .posts {
+        border: 3px solid #ff0000;
+        padding: 30px;
+    }
+
+        .header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .header_row {
+        display: flex;
+    }
+
+    .header_long {
+        height: 35px;
+        background-color: #000000;
+        flex: 3;
+    }
+
+    .header_short {
+        height: 35px;
+        background-color: #000000;
+        flex: 1;
+    }
+
+        .header_gap {
+        flex: 3;
+    }
+
+    .header_wide {
+        height: 35px;
+        background-color: #000000;
+    }
+
+        .bottom {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+
+    .bottom .rows,
+    .bottom .posts {
+        flex: 1;
+        margin-top: 0;
+    }
+
+        .header2 {
+        display: flex;
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .header2_col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1;
+    }
+
+    .header2_block {
+        height: 45px;
+        background-color: #000000;
+    }
