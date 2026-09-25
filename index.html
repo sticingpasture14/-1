@@ -34,9 +34,9 @@
         width: 200px;
         height: 200px;
         background-image: url('ffff/этоя.jpg');
-      /*для обычного квадрата с цветом вместо трех background, можно заменить на background-color: #000000*/
         background-size: cover;
         background-position: center;
+        /*для обычного квадрата с цветом вместо трех background, можно заменить на background-color: #000000*/
         margin-bottom: 20px;
     }
 
@@ -92,7 +92,25 @@
         text-align: left;
         line-height: 1.5;
     }
-  
+
+        .posts {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .post_title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .post_text {
+        text-align: left;
+        line-height: 1.5;
+    }
+
 </style>
 
 </head>
@@ -130,7 +148,7 @@
         </article>
     </main>
 
-          <section class="rows">
+        <section class="rows">
         <article class="row">
             <div class="row_image"></div>
             <div class="row_body">
@@ -167,6 +185,36 @@
             </div>
         </article>
     </section>
-  
+    
+    <section class="posts">
+        <article class="post">
+            <h2 class="post_title">Lorem ipsum</h2>
+            <p class="post_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </article>
+
+        <article class="post">
+            <h2 class="post_title">Lorem ipsum</h2>
+            <p class="post_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </article>
+
+        <article class="post">
+            <h2 class="post_title">Lorem ipsum</h2>
+            <p class="post_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </article>
+    </section>
+
 </body>
 </html>
+
