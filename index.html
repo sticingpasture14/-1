@@ -14,7 +14,7 @@
 
     body {
         font-family:'Times New Roman', Times, serif;
-        padding: 40;
+        padding: 40px;
     }
 
     .cards {
@@ -111,11 +111,51 @@
         line-height: 1.5;
     }
 
+        .cards,
+    .rows,
+    .posts {
+        border: 3px solid #ff0000;
+        padding: 30px;
+    }
+
+        .header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .header_row {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .header_block {
+        height: 50px;
+        background-color: #000000;
+        flex: 1;
+    }
+
+    .header_wide {
+        height: 50px;
+        background-color: #000000;
+    }
+
 </style>
 
 </head>
 
 <body>
+
+     <header class="header">
+        <div class="header_row">
+            <div class="header_block"></div>
+            <div class="header_block"></div>
+        </div>
+        <div class="header_wide"></div>
+    </header>
+
     <main class="cards">
         <article class="card">
             <div class="card_image"></div>
@@ -217,4 +257,3 @@
 
 </body>
 </html>
-
