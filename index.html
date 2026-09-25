@@ -50,6 +50,47 @@
         text-align: left;
         line-height: 1.5;
 
+    .rows {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .row:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .row_image {
+        width: 200px;
+        height: 200px;
+        background-color: #000000;
+        flex-shrink: 0;
+    }
+
+    .row_body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row_title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .row_text {
+        text-align: left;
+        line-height: 1.5;
+    }
+      
     }
 </style>
 
@@ -87,5 +128,44 @@
             </p>
         </article>
     </main>
+
+          <section class="rows">
+        <article class="row">
+            <div class="row_image"></div>
+            <div class="row_body">
+                <h2 class="row_title">Loren ipsum</h2>
+                <p class="row_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="row_image"></div>
+            <div class="row_body">
+                <h2 class="row_title">Loren ipsum</h2>
+                <p class="row_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="row_image"></div>
+            <div class="row_body">
+                <h2 class="row_title">Loren ipsum</h2>
+                <p class="row_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </article>
+    </section>
+  
 </body>
 </html>
